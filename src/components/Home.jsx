@@ -1,7 +1,9 @@
 import React,{Component} from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Connection from './Connection'
+import RobotState from "./RobotState";
 import Teleoperation from "./Teleoperation";
+import Map from './Map'
 
 class Home extends Component{
     render(){
@@ -21,7 +23,11 @@ class Home extends Component{
                     </Col>
                     <Col>
                         <h1>Map</h1>
+                        <Map/>
                     </Col>
+                    <Row>
+                        <RobotState/>
+                    </Row>
                 </Row>
                 </main>
 

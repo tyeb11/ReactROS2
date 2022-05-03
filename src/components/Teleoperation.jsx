@@ -13,7 +13,7 @@ class Teleoperation extends Component{
     }
         init_connection(){
         this.state.ros=new window.ROSLIB.Ros();
-
+            console.log('Joystick :' +this.state.ros)
         this.state.ros.on('connection',()=>{
             this.setState({connected:true})
         })
